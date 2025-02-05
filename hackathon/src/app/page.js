@@ -4,14 +4,16 @@ import Features from "./components/Features";
 import Hero from "./components/Hero";
 import PricingComponent from "./components/PricingComponent";
 import Dashboard from "./components/Dashboard";
+import Contacts from "./components/contacts";
+import AboutUs from "./components/About";
 
 export default function Home() {
   return (
     <div>
       <Hero />
       <Features />
-      <PricingComponent />
-      <Dashboard />
+      <AboutUs />
+      <Contacts />
     </div>
   );
 }
