@@ -120,7 +120,7 @@ const Hero = () => {
             </div>
 
             <p className="mt-8 text-center text-white text-md md:text-xl">
-              Notify me when Hackathon is launched :)
+              Notify me when Hackathon is launched ❤️
             </p>
           </div>
         </section>
