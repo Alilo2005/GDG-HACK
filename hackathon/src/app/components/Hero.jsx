@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section className="w-full min-h-screen bg-gray-900 border border-blue-400 border-opacity-50">
       <div className="container relative flex flex-col min-h-screen px-6 py-8 mx-auto">
-        <nav className="md:flex md:items-center md:justify-between">
+        <nav className="sticky top-0 z-50 bg-gray-900 md:flex md:items-center md:justify-between">
           <div className="flex items-center justify-between">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -61,22 +61,28 @@ const Hero = () => {
             } absolute inset-x-0 z-20 w-full px-6 py-8 mt-8 space-y-6 transition-all duration-300 ease-in-out bg-gray-900 top-16 md:mt-0 md:p-0 md:top-0 md:relative md:w-auto md:opacity-100 md:translate-x-0 md:space-y-0 md:-mx-6 md:flex md:items-center`}
           >
             <a
-              href="#"
+              href="#home"
               className="block text-white transition-colors duration-300 md:px-6 hover:text-blue-400"
             >
               Home
             </a>
             <a
-              href="#"
+              href="#bootcamps"
               className="block text-white transition-colors duration-300 md:px-6 hover:text-blue-400"
             >
               Bootcamps
             </a>
             <a
-              href="#"
+              href="#about"
               className="block text-white transition-colors duration-300 md:px-6 hover:text-blue-400"
             >
               About
+            </a>
+            <a
+              href="#contacts"
+              className="block text-white transition-colors duration-300 md:px-6 hover:text-blue-400"
+            >
+              Contacts
             </a>
 
             <button className="w-full px-5 py-3 transition-colors duration-300 bg-gray-800 rounded-md md:w-auto md:mx-6 hover:bg-gray-700">
