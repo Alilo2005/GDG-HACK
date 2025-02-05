@@ -2,13 +2,11 @@
 
 const Features = () => {
     return (
-      <section className="bg-gray-900">
+      <section className="bg-gray-900 border border-blue-400 border-opacity-50 pb-10 pt-10">
         <div className="container px-6 py-10 mx-auto">
-          <h1 className="text-2xl font-semibold text-white capitalize lg:text-3xl">
-            explore our <br /> awesome <span className="underline decoration-blue-500">Bootcamps</span>
-          </h1>
+          <h1 className=" text-blue-400 capitalize font-extrabold text-8xl mb-16 mt-16 text-center">Bootcamps</h1>
   
-          <p className="mt-4 text-gray-300 xl:mt-6">
+          <p className="mt-4 text-gray-300 xl:mt-6 text-center">
             Discover the best bootcamps to kickstart your career in tech.
           </p>
   

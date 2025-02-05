@@ -2,10 +2,10 @@
 
 const AboutUs = () => {
     return (
-        <section className="bg-gray-900 flex items-center justify-center min-h-screen">
+        <section className="bg-gray-900 flex items-center justify-center min-h-screen border border-blue-400 border-opacity-50">
             <div className="container px-6 py-12 mx-auto text-center">
                 <div>
-                    <p className="font-medium text-blue-400">About us</p>
+                    <h1 className="font-extrabold text-8xl m-16 text-blue-400">About us</h1>
 
                     <h1 className="mt-2 text-2xl font-semibold text-white md:text-3xl">Who we are</h1>
 

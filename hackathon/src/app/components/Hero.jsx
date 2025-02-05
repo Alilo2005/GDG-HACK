@@ -5,7 +5,7 @@ const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <section className="w-full min-h-screen bg-gray-900">
+    <section className="w-full min-h-screen bg-gray-900 border border-blue-400 border-opacity-50">
       <div className="container relative flex flex-col min-h-screen px-6 py-8 mx-auto">
         <nav className="md:flex md:items-center md:justify-between">
           <div className="flex items-center justify-between">

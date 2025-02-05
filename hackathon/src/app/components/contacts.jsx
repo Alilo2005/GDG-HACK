@@ -2,10 +2,10 @@
 
 const Contacts = () => {
     return (
-        <section className="bg-gray-900">
+        <section className="bg-gray-900 border border-blue-400 border-opacity-50">
             <div className="container px-6 py-12 mx-auto">
                 <div>
-                    <p className="font-medium text-blue-400">Contact us</p>
+                    <p className=" text-blue-400 font-extrabold text-8xl mb-16 mt-16 text-center">Contact us</p>
 
                     <h1 className="mt-2 text-2xl font-semibold text-white md:text-3xl">Get in touch</h1>
 
