@@ -45,14 +45,8 @@ const Hero = () => {
                 </svg>
               )}
             </button>
-
-            <a href="#">
-              <img
-                className="w-auto h-6 sm:h-7"
-                src="https://merakiui.com/images/full-logo.svg"
-                alt=""
-              />
-            </a>
+                <p className="text-2xl font-extrabold text-blue-400 font-mono md:text-3xl">GDG Hackathon.</p>
+            
           </div>
 
           <div
