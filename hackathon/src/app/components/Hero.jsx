@@ -1,5 +1,6 @@
 "use client";
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,8 +46,7 @@ const Hero = () => {
                 </svg>
               )}
             </button>
-                <p className="text-2xl font-extrabold text-blue-400 font-mono md:text-3xl">GDG Hackathon.</p>
-            
+            <p className="text-2xl font-extrabold text-blue-400 font-mono md:text-3xl">GDG Hackathon.</p>
           </div>
 
           <div
@@ -90,8 +90,13 @@ const Hero = () => {
         </nav>
 
         <section className="flex items-center flex-1">
-          <div className="flex flex-col w-full ">
-            <h1 className="text-5xl font-extrabold text-center lg:text-7xl 2xl:text-8xl">
+          <div className="flex flex-col w-full text-center">
+            <motion.h1
+              className="text-5xl font-extrabold lg:text-7xl 2xl:text-8xl"
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+            >
               <span className="text-transparent bg-gradient-to-br bg-clip-text from-teal-200 via-indigo-300 to-sky-500">
                 GDG 
               </span>
@@ -99,13 +104,23 @@ const Hero = () => {
               <span className="text-transparent bg-gradient-to-tr bg-clip-text from-sky-300 via-pink-300 to-red-500">
                 HACK
               </span>
-            </h1>
+            </motion.h1>
 
-            <p className="max-w-3xl mx-auto mt-6 text-lg text-center text-white md:text-xl ">
+            <motion.p
+              className="max-w-3xl mx-auto mt-6 text-lg text-white md:text-xl"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.5 }}
+            >
               A 3-days hackathon for developers, designers, and entrepreneurs to build and launch a project.
-            </p>
+            </motion.p>
 
-            <div className="flex flex-col mt-8 space-y-3 sm:-mx-2 sm:flex-row sm:justify-center sm:space-y-0">
+            <motion.div
+              className="flex flex-col mt-8 space-y-3 sm:-mx-2 sm:flex-row sm:justify-center sm:space-y-0"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 1 }}
+            >
               <input
                 id="email"
                 type="text"
@@ -117,11 +132,16 @@ const Hero = () => {
               <button type="submit" className="px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:bg-blue-600 focus:outline-none sm:mx-2">
                 Notify Me
               </button>
-            </div>
+            </motion.div>
 
-            <p className="mt-8 text-center text-white text-md md:text-xl">
+            <motion.p
+              className="mt-8 text-center text-white text-md md:text-xl"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 1.5 }}
+            >
               Notify me when Hackathon is launched ❤️
-            </p>
+            </motion.p>
           </div>
         </section>
       </div>
